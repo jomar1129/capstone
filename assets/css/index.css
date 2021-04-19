@@ -172,6 +172,10 @@ nav a:hover {
         display: none;
     }
 
+    .mobile-courses {
+        display: block !important;
+    }
+
     .mobile-article {
         justify-content: center;
         margin: 16px;
@@ -192,6 +196,8 @@ nav a:hover {
 
     .mobile-courses h1 {
         text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .mobile-cards h2 {
@@ -211,6 +217,7 @@ nav a:hover {
 
     .mobile-exhibit {
         width: 100%;
+        display: flex !important;
     }
 
     .mobile-exhibit .video-exhibit {
