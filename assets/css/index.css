@@ -1,448 +1,442 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.8);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .nav nav {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-    height: 64px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 64px;
 }
 
 /*mobile*/
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 724px) {
+  .nav {
+    display: none;
+  }
 
-    .nav {
-        display: none;
-    }
+  .mobile {
+    display: flex;
+    text-align: center;
+  }
 
-    .mobile {
-        display: flex;
-        text-align: center;
-    }
+  .mobile nav {
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 64px;
+  }
 
-    .mobile nav {
-        display: flex;
-        /* justify-content: center; */
-        width: 100%;
-        margin: 0 auto;
-        justify-content: space-between;
-        height: 64px;
-    }
+  .mobile ul {
+    list-style: none;
+    width: 100%;
+  }
 
-    .mobile ul {
-        list-style: none;
-        width: 100%;
-    }
+  .mobile li {
+    display: inline-block;
+    margin-right: 16px;
+    text-align: center;
+  }
 
-    .mobile li {
-        display: inline-block;
-        margin-right: 16px;
-        text-align: center;
-    }
-
-    .mobile a {
-        text-align: center;
-        color: white;
-        text-decoration: none;
-        font-size: 17px;
-        margin: 0;
-    }
+  .mobile a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
+  }
 }
 
 .container {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    padding-left: 24px;
-    flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  flex-grow: 1;
 }
 
 .logo span {
-    font-size: 18px;
-    line-height: 1.125rem;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    color: rgb(57, 57, 57);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
+  font-size: 18px;
+  line-height: 1.125rem;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  color: rgb(57, 57, 57);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-    height: 42px;
+  height: 42px;
 }
 
 .nav ul {
-    list-style: none;
-    margin-right: 24px;
+  list-style: none;
+  margin-right: 24px;
 }
 
 .nav li {
-    display: inline-block;
-    margin-right: 16px;
+  display: inline-block;
+  margin-right: 16px;
 }
 
 .nav a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 nav a:hover {
-    background-color: grey;
-    text-decoration: underline;
-    transition: 1s ease;
+  background-color: grey;
+  text-decoration: underline;
+  transition: 1s ease;
 }
 
-
 .container-left {
-    display: block;
-    width: 60%;
-    margin: 32px 24px;
+  display: block;
+  width: 60%;
+  margin: 32px 24px;
 }
 
 .container-right {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    margin: 32px auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto;
 }
 
 .banner-mobile {
-    display: none;
+  display: none;
 }
 
 .mobile-information {
-    display: none;
+  display: none;
 }
 
 /* Banner */
 
 /*mobile */
 
-@media screen and (max-width:724px) {
+@media screen and (max-width: 724px) {
+  body {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
 
+  .banner {
+    display: none;
+  }
 
-    body {
-        font-family: 'Open Sans', sans-serif;
-        letter-spacing: 1px;
-        font-size: 1rem;
-    }
+  .banner-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+  }
 
-    .banner {
-        display: none;
-    }
+  .mobile-banner {
+    align-items: center;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 
-    .banner-mobile {
-        display: flex;
-        flex-direction: column;
-        background-color: lightgray;
-    }
+  .mobile-banner button {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 
-    .mobile-banner {
-        align-items: center;
-        margin-right: 16px;
-        margin-left: 16px;
-    }
+  .information {
+    display: none;
+  }
 
-    .mobile-banner button {
-        width: 100%;
-        margin-top: 24px;
-        margin-bottom: 32px;
-    }
+  .mobile-courses {
+    display: block !important;
+  }
 
-    .information {
-        display: none;
-    }
+  .mobile-article {
+    justify-content: center;
+    margin: 16px;
+  }
 
-    .mobile-courses {
-        display: block !important;
-    }
+  .mobile-article img {
+    width: 100%;
+    height: 200px;
+  }
 
-    .mobile-article {
-        justify-content: center;
-        margin: 16px;
-    }
+  .mobile-article a {
+    margin-bottom: 64px;
+  }
 
-    .mobile-article img {
-        width: 100%;
-        height: 200px;
-    }
+  .courses {
+    display: none !important;
+  }
 
-    .mobile-article a {
-        margin-bottom: 64px;
-    }
+  .mobile-courses h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 
-    .courses {
-        display: none !important;
-    }
+  .mobile-cards h2 {
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
 
-    .mobile-courses h1 {
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+  /*thesis*/
 
-    .mobile-cards h2 {
-        background-color: lightgray;
-        text-align: center;
-        padding-top: 16px;
-        padding-left: 16px;
-        padding-bottom: 24px;
-        margin-bottom: 8px;
-    }
+  .exhibit {
+    display: none;
+  }
 
-    /*thesis*/
+  .mobile-exhibit {
+    width: 100%;
+    display: flex !important;
+  }
 
-    .exhibit {
-        display: none;
-    }
+  .mobile-exhibit .video-exhibit {
+    margin: 0 auto;
+  }
 
-    .mobile-exhibit {
-        width: 100%;
-        display: flex !important;
-    }
-
-    .mobile-exhibit .video-exhibit {
-        margin: 0 auto;
-    }
-
-    footer ul {
-        display: none;
-    }
-
+  footer ul {
+    display: none;
+  }
 }
 
 .mobile-exhibit {
-    display: none;
+  display: none;
 }
 
 .mobile-courses {
-    display: none;
+  display: none;
 }
 
-
 .image-banner {
-    justify-content: center;
+  justify-content: center;
 }
 
 .image-banner img {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .image-banner h1 {
-    font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 800;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 800;
 }
 
-
 .image-banner span {
-    padding-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .text-banner {
-    justify-content: center;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.8);
-    padding-right: 75px;
+  justify-content: center;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 75px;
 }
 
 .banner h1 {
-    font-family: 'Jura', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 300;
-    line-height: 1.2;
-    font-size: 2rem;
+  font-family: "Jura", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 2rem;
 }
 
 .banner {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .banner span {
-    font-size: 1.125rem;
-    padding: 30px 0;
-    padding-bottom: 40px;
-    font-weight: 100;
-    line-height: 1.3;
-    color: rgba(0, 0, 0, 0.8);
+  font-size: 1.125rem;
+  padding: 30px 0;
+  padding-bottom: 40px;
+  font-weight: 100;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 button {
-    display: block;
-    background-color: gray;
-    color: rgb(250, 250, 250);
-    text-align: center;
-    padding: 10px 0;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    border-radius: 3px;
-    font-weight: 200;
-    transition-property: all;
-    transition-duration: 0.20s;
+  display: block;
+  background-color: gray;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  font-weight: 200;
+  transition-property: all;
+  transition-duration: 0.2s;
 }
 
 button:hover {
-    background-color: rgb(250, 250, 250);
-    color: rgb(26, 41, 48);
-    font-weight: 300;
+  background-color: rgb(250, 250, 250);
+  color: rgb(26, 41, 48);
+  font-weight: 300;
 }
 
 /* information */
 
-
 .article-image {
-    width: 35%;
-    padding: 16px;
+  width: 35%;
+  padding: 16px;
 }
 
 .article-image img {
-    width: 100%;
+  width: 100%;
 }
 
-
 .article-1 {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .article-1:hover {
-    background-color: grey;
+  background-color: grey;
 }
 
 .with-borders {
-    border-top: 1px solid #000;
+  border-top: 1px solid #000;
 }
 
 .articles {
-    display: flex;
+  display: flex;
 }
 
 .article-box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
+.article-box > a {
+  text-decoration: none;
+  color: darkblue;
+}
 
 /*courses*/
 
 .courses {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(70, 51, 255, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(216, 216, 216);
 }
 
 .courses h1 {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 32px 32px 32px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 32px 32px 32px 0;
+  background-color: white;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .courses-cards {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-text {
-    margin: 16px 16px;
+  margin: 16px 16px;
 }
 
 /*exhibit*/
 .thesis-heading {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.8) !important;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .exhibit {
-    width: 100%;
+  width: 100%;
 }
 
 .exhibit h1 {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .video-exhibit {
-    margin: 24px;
+  margin: 24px;
 }
 
 .video-exhibit video {
-    width: 100%;
+  width: 100%;
 }
 
 .thesis-image {
-    width: 35%;
-    padding: 16px;
+  width: 35%;
+  padding: 16px;
 }
 
 .thesis-image img {
-    width: 100%;
+  width: 100%;
 }
 
 /*footer */
 
 footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer span {
-    margin: 16px 0 0 24px;
+  margin: 16px 0 0 24px;
 }
 
 footer ul {
-    list-style-type: none;
-    margin-top: 16px;
+  list-style-type: none;
+  margin-top: 16px;
 }
 
-
 footer li {
-    display: inline-block;
-
+  display: inline-block;
 }
 
 footer a {
-    text-decoration: none;
-    margin-right: 16px;
+  text-decoration: none;
+  margin-right: 16px;
 }
